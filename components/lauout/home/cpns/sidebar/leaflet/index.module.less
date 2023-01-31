@@ -1,0 +1,40 @@
+// components/layout/home/cpns/sidebar/download/index.module.less
+@import "../index.module.less";
+
+.blockBody {
+  &:extend(.sidebarBlock);
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+    
+    .appLink {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+
+      .qrImg {
+        margin-right: 16px;
+        width: 50px;//4.167rem
+        height: 50px;//4.167rem
+      }
+
+      .contentBox {
+        .headline {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #1d2129;
+        }
+  
+        .desc {
+          margin-top: 0.5rem;
+          font-size: 12px;
+          line-height: 20px;
+          color: #86909c;
+        }
+      }
+    }
+  }
+}

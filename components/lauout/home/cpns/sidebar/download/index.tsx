@@ -1,4 +1,4 @@
-// components/layout/home/cpns/download/index.tsx
+// components/layout/home/cpns/sidebar/download/index.tsx
 import { FC } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
@@ -14,7 +14,6 @@ interface IProps {
 // todo: qrImage, headline和desc的内容后台配置
 const Download: FC<IProps> = (props) => {
   return (
-    <div className={styles.siderbarBlock}>
       <div className={styles.blockBody}>
         <Link href="https://juejin.cn/app" className={styles.a}>
           <div className={styles.appLink}>
@@ -30,9 +29,6 @@ const Download: FC<IProps> = (props) => {
           </div>
         </Link>
       </div>
-
-
-    </div>
   )
 }
 export default Download;

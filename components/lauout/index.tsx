@@ -1,3 +1,4 @@
+// components/layout/index.tsx
 import { memo } from 'react'
 import type { FC, ReactElement } from 'react'
 import Header from '@/components/header'

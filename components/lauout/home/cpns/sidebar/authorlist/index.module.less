@@ -1,0 +1,23 @@
+// components/layout/home/cpns/sidebar/authorlist/index.module.less
+@import "../index.module.less";
+
+.authorBlock {
+  &:extend(.sidebarBlock);
+
+  header {
+    padding: 1rem 1.3rem;
+    border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+  }
+
+  .list {
+    .item {
+      .more {
+        color: #007fff;
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid hsla(0,0%,59.2%,.1);
+      }
+    }
+  }
+
+}

@@ -12,9 +12,9 @@ const BaseLayout: FC<IProps> = memo((props) => {
 
   return (
     <>
-      <Header />{/*仅上方的导航栏+logo*/}
+      <Header />{/* 仅上方的导航栏+logo */}
 
-      {children}{/*下方的所有：tab栏 + home-list + sidebar(component-layout-home)*/}
+      {children}{/* 下方的所有：tab栏 + home-list + sidebar(component-layout-home) */}
     </>
   )
 })

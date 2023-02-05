@@ -1,10 +1,10 @@
 // components/layout/home/cpns/sidebar/authorlist/index.tsx
-import { FC } from 'react';
+import type { FC } from 'react'
 import styles from './index.module.less'
-import Author from './author';
+import Author from './author'
 
 interface IProps {
-  href?: string;
+  href?: string
 }
 
 const AuthorList: FC<IProps> = (props) => {
@@ -15,17 +15,17 @@ const AuthorList: FC<IProps> = (props) => {
         <Author/>
         <Author/>
         <Author/>
-        <a 
-          className={styles.item} 
+        <a
+          className={styles.item}
           href="https://juejin.cn/recommendation/authors/recommended">
           <div className={styles.more}>
-            <span>完整榜单 {">"}</span>
+            <span>完整榜单 {'>'}</span>
           </div>
         </a>
       </div>
     </div>
-    
+
   )
 }
 
-export default AuthorList;
+export default AuthorList

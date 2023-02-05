@@ -12,14 +12,14 @@ export interface IProps {
 }
 
 const Sidebar: FC<IProps> = memo((props) => {
-  //const { children } = props
+  // const { children } = props
 
   return (
     <div>
       <Register/>
-      <Leaflet/> {/*小册广告组件*/}
-      <Download/> {/*APP下载组件*/}
-      <AuthorList/> {/*作者榜组件*/}
+      <Leaflet/> {/* 小册广告组件 */}
+      <Download/> {/* APP下载组件 */}
+      <AuthorList/> {/* 作者榜组件 */}
     </div>
   )
 })

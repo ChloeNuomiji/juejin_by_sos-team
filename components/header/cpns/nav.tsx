@@ -1,17 +1,17 @@
 import { memo, useState } from 'react'
 import type { FC } from 'react'
 import Link from 'next/link'
+import { Trigger } from '@arco-design/web-react'
 import styles from './nav.module.less'
-import { Trigger } from '@arco-design/web-react';
 
 export interface IProps {
-  active: number;
+  active: number
 }
 
 const HeaderNav: FC<IProps> = memo((props) => {
-  const active = props.active || 0;
-  const list = ['首页', '沸点', '课程', '直播', '活动', '竞赛'];
-  const [listOpen, setListOpen] = useState(false);
+  const active = props.active || 0
+  const list = ['首页', '沸点', '课程', '直播', '活动', '竞赛']
+  const [listOpen, setListOpen] = useState(false)
   function NavList() {
     return (
       <ul className={styles.navContainer}>
